@@ -24,7 +24,7 @@ class UserFactory extends Factory
             'address' => $this->faker->streetAddress,
             'password' => Hash::make('secret'),
             'email' => $this->faker->unique()->safeEmail(),
-            'birthday' => $this->faker->dateTimeBetween('-50 years', 'now'),
+            'birthdate' => $this->faker->dateTimeBetween('-50 years', 'now'),
             'email_verified_at' => now(),
             'remember_token' => Str::random(10),
         ];
